@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Mad New</string>
+    <string name="textView34">Search Products</string>
+    <string name="textView6">Product Name</string>
+    <string name="textView3">Product Name</string>
+    <string name="textView4">Product Name</string>
+    <string name="textView7">Product Name</string>
+    <string name="textView18">Product Name</string>
+    <string name="textView20">description</string>
+    <string name="textView22">LKR 100</string>
+    <string name="editTextTextPersonName6">Product Review</string>
+    <string name="textView17">Edit</string>
+    <string name="textView14">Remove</string>
+    <string name="textView25">Saller Name</string>
+    <string name="textView26">hello</string>
+    <string name="textView24">Message..</string>
+    <string name="textView140">Send</string>
+    <string name="textView18">Product Name</string>
+    <string name="textView20">description</string>
+    <string name="textView22">LKR 100</string>
+    <string name="editTextTextPersonName6">Product Review</string>
+    <string name="textView17">Edit</string>
+    <string name="textView140">Send</string>
+    <string name="textView23">Edit Product</string>
+    <string name="editTextTextPersonName8">Product Name</string>
+    <string name="editTextTextPersonName7">price</string>
+    <string name="editTextTextPersonName9">description</string>
+    <string name="button">Add Images</string>
+    <string name="textView17">Edit</string>
+    <string name="textView140">confirm</string>
+    <string name="textView5">Add Product</string>
+    <string name="editTextTextPersonName2">Product Name</string>
+    <string name="editTextTextPersonName3">price</string>
+    <string name="editTextTextPersonName4">description</string>
+    <string name="button2">Add Images</string>
+    <string name="textView140">Add</string>
+    <string name="imageView36">My Reviews</string>
+    <string name="textView30">Good seller</string>#
+    <string name="textView27">Good seller</string>
+    <string name="textView29">Good seller</string>
+    <string name="textView31">Good seller</string>
+    <string name="textView32">Good seller</string>
+
+
+
+
+
+
+
+
+
+</resources>
