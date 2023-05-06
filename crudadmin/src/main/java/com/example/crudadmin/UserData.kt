@@ -1,5 +1,5 @@
 package com.example.crudadmin
 
-data class UserData(val name : String? = null, val phone : String? = null){
+data class UserData(val review : String? = null, val seller : String? = null){
 
 }

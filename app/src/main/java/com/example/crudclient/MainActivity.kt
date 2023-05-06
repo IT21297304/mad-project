@@ -19,24 +19,24 @@ class MainActivity : AppCompatActivity() {
 
         binding.searchButton.setOnClickListener {
 
-            val searchPhone : String = binding.searchPhone.text.toString()
-            if  (searchPhone.isNotEmpty()){
-                readData(searchPhone)
+            val searchSeller : String = binding.searchSeller.text.toString()
+            if  (searchSeller.isNotEmpty()){
+                readData(searchSeller)
             }else{
                 Toast.makeText(this,"PLease enter seller name",Toast.LENGTH_SHORT).show()
             }
         }
     }
 
-    private fun readData(phone: String) {
+    private fun readData(seller: String) {
         database = FirebaseDatabase.getInstance().getReference("Users")
-        database.child(phone).get().addOnSuccessListener {
+        database.child(seller).get().addOnSuccessListener {
 
             if (it.exists()){
 
                 val name = it.child("name").value
                 Toast.makeText(this,"Results Found",Toast.LENGTH_SHORT).show()
-                binding.searchPhone.text.clear()
+                binding.searchSeller.text.clear()
                 binding.name.text = name.toString()
 
             }else{

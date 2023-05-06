@@ -20,7 +20,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:id="@+id/referencePhone"
+            android:id="@+id/referenceSeller"
             android:background="@drawable/lavender_border"
             android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"
@@ -33,7 +33,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="60dp"
-            android:id="@+id/updateName"
+            android:id="@+id/updateReview"
             android:background="@drawable/lavender_border"
             android:layout_marginTop="20dp"
             android:layout_marginStart="10dp"

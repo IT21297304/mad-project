@@ -18,24 +18,24 @@ class UpdateActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.updateButton.setOnClickListener {
-            val referencePhone = binding.referencePhone.text.toString()
-            val updateName = binding.updateName.text.toString()
+            val referenceSeller = binding.referenceSeller.text.toString()
+            val updateName = binding.updateReview.text.toString()
 
-            updateData(referencePhone,updateName)
+            updateData(referenceSeller,updateName)
         }
     }
 
-    private fun updateData(phone: String, name: String) {
+    private fun updateData(seller: String, review: String) {
 
         database = FirebaseDatabase.getInstance().getReference("Users")
         val user = mapOf<String,String>(
-            "name" to name
+            "review" to review
         )
 
-        database.child(phone).updateChildren(user).addOnSuccessListener {
+        database.child(seller).updateChildren(user).addOnSuccessListener {
 
-            binding.referencePhone.text.clear()
-            binding.updateName.text.clear()
+            binding.referenceSeller.text.clear()
+            binding.updateReview.text.clear()
 
             Toast.makeText(this,"Successfully Updated",Toast.LENGTH_SHORT).show()
 

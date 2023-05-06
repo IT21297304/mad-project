@@ -18,17 +18,17 @@ class DeleteActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.deleteButton.setOnClickListener {
-            val phone = binding.deletePhone.text.toString()
-            if (phone.isNotEmpty())
-                deleteData(phone)
+            val seller = binding.deleteSeller.text.toString()
+            if (seller.isNotEmpty())
+                deleteData(seller)
             else
                 Toast.makeText(this, "Please enter seller name", Toast.LENGTH_SHORT).show()
         }
     }
-    private fun deleteData(phone: String){
+    private fun deleteData(seller: String){
         database = FirebaseDatabase.getInstance().getReference("Users")
-        database.child(phone).removeValue().addOnSuccessListener {
-            binding.deletePhone.text.clear()
+        database.child(seller).removeValue().addOnSuccessListener {
+            binding.deleteSeller.text.clear()
             Toast.makeText(this, "Deleted", Toast.LENGTH_SHORT).show()
         }.addOnFailureListener {
             Toast.makeText(this, "Unable to delete", Toast.LENGTH_SHORT).show()

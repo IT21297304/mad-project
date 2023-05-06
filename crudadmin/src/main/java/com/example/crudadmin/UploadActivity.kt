@@ -20,15 +20,15 @@ class UploadActivity : AppCompatActivity() {
 
         binding.saveButton.setOnClickListener {
 
-            val name = binding.uploadName.text.toString()
-            val phone = binding.uploadPhone.text.toString()
+            val review = binding.uploadReview.text.toString()
+            val seller = binding.uploadSeller.text.toString()
 
             database = FirebaseDatabase.getInstance().getReference("Users")
-            val users = UserData(name,phone)
-            database.child(phone).setValue(users).addOnSuccessListener {
+            val users = UserData(review, seller)
+            database.child(seller).setValue(users).addOnSuccessListener {
 
-                binding.uploadName.text.clear()
-                binding.uploadPhone.text.clear()
+                binding.uploadReview.text.clear()
+                binding.uploadSeller.text.clear()
 
                 Toast.makeText(this,"Saved",Toast.LENGTH_SHORT).show()
                 val intent = Intent(this@UploadActivity, MainActivity::class.java)
