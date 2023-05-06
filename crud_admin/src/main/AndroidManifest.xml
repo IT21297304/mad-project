@@ -8,6 +8,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CRUD_Client">
         <activity
+            android:name=".NewActivity"
+            android:exported="false" />
+        <activity
             android:name=".DeleteActivity"
             android:exported="false" />
         <activity
